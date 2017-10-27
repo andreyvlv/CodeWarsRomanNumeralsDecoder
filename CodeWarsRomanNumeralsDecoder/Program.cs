@@ -10,8 +10,9 @@ namespace CodeWarsRomanNumeralsDecoder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Solution("XXI"));
-            Console.WriteLine(Solution2("XIX"));
+            Console.Write("Введите римское число - ");
+            string romanNumber = Console.ReadLine();           
+            Console.Write($"Это арабское - {Solution2(romanNumber)}");
             Console.ReadKey();
         }
 
